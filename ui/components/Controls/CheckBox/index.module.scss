@@ -1,0 +1,22 @@
+@import '../../../../styles/variables.scss';
+
+.CheckBox {
+    width: $base*8;
+    height: $base*8;
+}
+
+.CheckBox__checked {
+    width: $base*8;
+    height: $base*8;
+    color: black;
+}
+
+.MuiCheckbox-root {
+    width: $base*8;
+    height: $base*8;
+    background-color: red;
+}
+
+.CheckBox__Label {
+    user-select: none;
+}

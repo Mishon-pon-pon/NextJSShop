@@ -1,0 +1,15 @@
+.Menu-Item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    padding: 0 15px;
+    user-select: none;
+}
+
+.Menu-Item:hover {
+    background-color: #fffcf8;
+    cursor: pointer;
+}

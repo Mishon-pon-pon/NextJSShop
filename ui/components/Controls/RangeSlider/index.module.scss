@@ -1,0 +1,10 @@
+@import "../../../../styles/variables.scss";
+
+.RangeSlider {
+    width: 80%;
+
+    .RangeSlider__values {
+        display: flex;
+        justify-content: space-between;
+    }
+}

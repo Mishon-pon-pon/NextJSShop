@@ -1,0 +1,9 @@
+@import "../../../../../styles/variables.scss";
+
+.Filter-Block {
+    .Filter-Block__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: $base * 10;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../../../../styles/variables.scss';
+
+.Filters-Title {
+    display: flex;
+
+    .Filters-Title__icon{
+        margin-right: $base * 3;
+    }
+
+    .Filters-Title__text {
+
+    }
+}
