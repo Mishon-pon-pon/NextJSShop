@@ -3,4 +3,14 @@
 .Layout {
     flex-grow: 1;
     padding: $base*10;
+
+    .Goods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &>* {
+            margin: $base*4;
+        }
+    }
 }

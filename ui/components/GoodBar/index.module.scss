@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+
+.GoodBar {
+    max-width: $base*65;
+    height: $base * 109;
+    text-align: center;
+    padding: $base;
+
+    .GoodBar__value-price {
+        display: flex;
+        justify-content: space-between;
+        margin: $base*5 0;
+    }
+
+    .GoodBar__Footer {
+        display: flex;
+        justify-content: space-between;
+
+        .GoodBar__Basket{
+            cursor: pointer;
+        }
+    }
+
+}
