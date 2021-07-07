@@ -7,7 +7,6 @@
     .Goods {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
 
         &>* {
             margin: $base*4;

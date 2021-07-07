@@ -11,37 +11,51 @@ const Goods: Array<IGood> = [
     id: 1,
     name: 'Cardamusc Essence de parfum',
     value: 20,
-    price: 375
-  },{
+    price: 375,
+    imgPath: '/png/goodsImg.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
+  }, {
     id: 2,
     name: 'Musc Pallida Essence de parfum',
     value: 20,
-    price:  375
-  },{
+    price: 375,
+    imgPath: '/png/product1.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
+  }, {
     id: 3,
     name: 'Ambre Narguile Eau de toilette',
     value: 100,
-    price: 266
-  },{
+    price: 266,
+    imgPath: '/png/product2.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
+  }, {
     id: 4,
     name: 'Poivre Samarcande Eau de toilette',
     value: 20,
-    price: 266
-  },{
+    price: 266,
+    imgPath: '/png/goodsImg.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
+  }, {
     id: 5,
     name: 'Osmanthe Yunnan Eau de toilette',
-    value:20,
-    price: 266
-  },{
+    value: 20,
+    price: 266,
+    imgPath: '/png/goodsImg.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
+  }, {
     id: 6,
     name: 'Vetiver Tonka Eau de toilette',
     value: 100,
-    price: 266
-  },{
+    price: 266,
+    imgPath: '/png/goodsImg.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
+  }, {
     id: 7,
     name: `Galop d'Hermes Parfum`,
     value: 50,
-    price: 215
+    price: 215,
+    imgPath: '/png/goodsImg.png',
+    description: `A garden full of life, generous and sparkling, where the scents of green mango, lotus blossom and rush blend with incense and sycamore wood.`
   },
 ]
 

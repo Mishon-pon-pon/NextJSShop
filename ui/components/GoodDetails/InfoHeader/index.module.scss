@@ -1,0 +1,7 @@
+@import "../../../../styles/variables.scss";
+
+.InfoHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: $base * 2;
+}

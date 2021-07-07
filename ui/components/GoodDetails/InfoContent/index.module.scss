@@ -1,0 +1,42 @@
+@import "../../../../styles/variables.scss";
+
+.InfoContent {
+    height: auto;
+    padding: $base * 10;
+
+    .InfoContent__Name {
+        font-size: $base * 5;
+        margin-bottom: $base * 4;
+    }
+
+    .InfoContent__Description {
+        margin-bottom: $base * 10;
+    }
+
+    .InfoContent__ValueGroup {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $base * 10;
+
+        & > * {
+            font-weight: 600;
+        }
+    }
+
+    .InfoContent__ControlsGroup {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .InfoContent__AddCard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: $base * 42;
+            height: $base * 11;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

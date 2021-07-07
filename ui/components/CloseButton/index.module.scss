@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.CloseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $base*9;
+    height: $base*9;
+    border-radius: 50%;
+    transition: background 0.3s;
+
+    &:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+.ModalMU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Modal {
+        width: $base * 217;
+        height: $base * 127;
+        background-color: white;
+
+        .Modal__Header {
+            border-bottom: 1px solid;
+        }
+    }
+}

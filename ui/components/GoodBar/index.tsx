@@ -1,20 +1,29 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import { IncDecControl } from '../Controls/IncDecControl'
 import BasketIcon from '../../../assets/svg/BasketIcon.svg'
+import { GoodDetails } from '../GoodDetails'
 import s from './index.module.scss'
 
 export interface IGood {
-  id: number;
-  name: string;
-  value: number;
-  price: number;
+    id: number;
+    name: string;
+    value: number;
+    price: number;
+    imgPath: string;
+    description: string;
 }
 
-export const GoodBar: FC<IGood> = ({name, value, price}) => {
+export const GoodBar: FC<IGood> = (params) => {
+    const [isOpenModal, setIsOpenModal] = useState(false)
+    const onOpen = () => { setIsOpenModal(true) }
+    const onClose = () => { setIsOpenModal(false) }
+    const { value, price, name, imgPath } = params
+
     return <div className={s.GoodBar}>
-        <img src='/png/goodsImg.png' />
+        <GoodDetails item={params} open={isOpenModal} onClose={onClose} />
+        <img src={imgPath} />
         <div style={{ textAlign: 'left' }}>
-            <p style={{ fontSize: '18px' }}>{name}</p>
+            <p onClick={onOpen} className={s.GoodBar__Name}>{name}</p>
         </div>
         <div className={s['GoodBar__value-price']}>
             <div>{value}ml</div>
@@ -22,7 +31,7 @@ export const GoodBar: FC<IGood> = ({name, value, price}) => {
         </div>
         <div className={s['GoodBar__Footer']}>
             <IncDecControl />
-            <BasketIcon className={s.GoodBar__Basket} onClick={()=>{}} />
+            <BasketIcon className={s.GoodBar__Basket} onClick={() => { }} />
         </div>
     </div>
 }
