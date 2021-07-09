@@ -9,19 +9,19 @@ const Config = [
   },
   {
     title: "50ml",
-    value: 1,
+    value: 2,
   },
   {
     title: "100ml",
-    value: 1,
+    value: 3,
   },
   {
     title: "125ml",
-    value: 1,
+    value: 4,
   },
   {
     title: "200ml",
-    value: 1,
+    value: 5,
   },
 ];
 

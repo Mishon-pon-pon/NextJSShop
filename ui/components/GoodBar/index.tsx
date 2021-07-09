@@ -5,19 +5,19 @@ import { GoodDetails } from '../GoodDetails'
 import s from './index.module.scss'
 
 export interface IGood {
-    id: number;
-    name: string;
-    value: number;
-    price: number;
+    GoodId: number;
+    Name: string;
+    Value: number;
+    Price: number;
     imgPath: string;
-    description: string;
+    Description: string;
 }
 
 export const GoodBar: FC<IGood> = (params) => {
     const [isOpenModal, setIsOpenModal] = useState(false)
     const onOpen = () => { setIsOpenModal(true) }
     const onClose = () => { setIsOpenModal(false) }
-    const { value, price, name, imgPath } = params
+    const { Value: value, Price: price, Name: name, imgPath } = params
 
     return <div className={s.GoodBar}>
         <GoodDetails item={params} open={isOpenModal} onClose={onClose} />
