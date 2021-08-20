@@ -4,7 +4,7 @@ import goodsReducer from './Goods'
 
 const store = configureStore({
   reducer: {
-      counter: counterReducer,
+      basket: counterReducer,
       goods: goodsReducer
   }
 })

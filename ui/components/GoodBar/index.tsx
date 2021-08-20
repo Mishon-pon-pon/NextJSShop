@@ -22,7 +22,7 @@ export const GoodBar: FC<IGood> = (params) => {
     const onClose = () => { setIsOpenModal(false) }
     const { Value: value, Price: price, Name: name, imgPath } = params
 
-    const count = useAppSelector(state => state.counter.products)
+    const count = useAppSelector(state => state.basket.products)
     const dispatch = useAppDispatch();
     const [amount, setAmount] = useState(0)
     const increment = () => {

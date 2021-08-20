@@ -6,7 +6,7 @@ import { useAppSelector } from "../../store/hooks";
 import s from "./index.module.scss";
 
 export const Basket: FC = () => {
-  const counterGoods = useAppSelector(state => state.counter.products)
+  const counterGoods = useAppSelector(state => state.basket.products)
   const [invisible, setInvisible] = useState(true);
 
   useEffect(() => {
