@@ -10,7 +10,7 @@ const initialState: CounterState = {
 }
 
 export const counterSlice = createSlice({
-    name: 'counter',
+    name: 'basket',
     initialState: initialState,
     reducers: {
         incrementByAmount: (state, action: PayloadAction<{amount: number, goodId: number}>) => {
