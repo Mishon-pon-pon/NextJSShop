@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './Counter'
+import counterReducer from './Basket'
 import goodsReducer from './Goods'
 
 const store = configureStore({

@@ -1,10 +1,12 @@
+@import "../../../styles/variables.scss";
+
 .Header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 122px;
     padding: 0 40px;
-    background-color: #F6F1EB;
+    background-color: #f6f1eb;
 }
 
 .Logo {
@@ -17,6 +19,6 @@
     padding-left: 31px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: $base * 125;
     height: 122px;
 }

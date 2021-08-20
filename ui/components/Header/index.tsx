@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
 import Logo from "../../../assets/svg/logo.svg";
-import { Menu } from "../Menu";
 import { Search } from "../Search";
 import { Basket } from "../Basket";
 
@@ -11,7 +10,7 @@ export const Header: FC = () => {
       <div className={styles.Logo}>
         <Logo />
       </div>
-      <Menu />
+      {/* <Menu /> */}
       <div className={styles.SearchBasket}>
         <Search />
         <Basket />

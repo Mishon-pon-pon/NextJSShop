@@ -1,31 +1,42 @@
 @import "../../../styles/variables.scss";
 
 .GoodBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: $base * 65;
-    height: $base * 109;
+    height: $base * 117;
     text-align: center;
     padding: $base;
 
-    .GoodBar__value-price {
-        display: flex;
-        justify-content: space-between;
-        margin: $base * 5 0;
-    }
+    .GoodBar__clickzone {
+        cursor: pointer;
 
-    .GoodBar__Footer {
-        display: flex;
-        justify-content: space-between;
-
-        .GoodBar__Basket {
+        .GoodBar__Name {
+            font-size: $base * 4+2;
             cursor: pointer;
+            user-select: none;
         }
     }
 
-    .GoodBar__Name {
-        font-size: $base * 4+2;
-        cursor: pointer;
+    .GoodBar__Footer {
+        .GoodBar__value-price {
+            display: flex;
+            justify-content: space-between;
+            margin: $base * 5 0;
+        }
+
+        .GoodBar__actions {
+            display: flex;
+            justify-content: space-between;
+
+            .GoodBar__Basket {
+                cursor: pointer;
+            }
+        }
     }
 }
+
 .GoodBar__modal {
     display: flex;
     justify-content: center;

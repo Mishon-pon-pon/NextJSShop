@@ -1,25 +1,16 @@
-import React, { FC, useState } from 'react'
-import { decrement, increment } from '../../../store/Counter'
-import { useAppDispatch, useAppSelector } from '../../../store/hooks'
+import React, { FC } from 'react'
 import s from './index.module.scss'
 
-export const IncDecControl: FC = () => {
-    const count = useAppSelector(state => state.counter.value)
-    const dispatch = useAppDispatch();
+interface IProps {
+    value: number;
+    increment: () => void;
+    decrement: () => void;
+}
 
-    const [value, setValue] = useState(0)
-    const Inc = () => {
-        setValue(value => value + 1)
-        dispatch(increment())
-    }
-    const Dec = () => {
-        if (value <= 0) return
-        setValue(value => value - 1)
-        dispatch(decrement())
-    }
+export const IncDecControl: FC<IProps> = ({ value, increment, decrement }) => {
     return <div className={s.IncDecControl}>
-        <div className={s["IncDecControl__Decrement"]} onClick={Dec}>-</div>
+        <div className={s["IncDecControl__Decrement"]} onClick={decrement}>-</div>
         <div className={s["IncDecControl__Value"]}>{value}</div>
-        <div className={s["IncDecControl__Increment"]} onClick={Inc}>+</div>
+        <div className={s["IncDecControl__Increment"]} onClick={increment}>+</div>
     </div>
 }

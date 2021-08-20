@@ -6,9 +6,13 @@ import s from './index.module.scss'
 
 interface IProps {
     item: IGood
+    increment: () => void;
+    decriment: () => void;
+    commit: () => void;
+    value: number
 }
 
-export const InfoContent: FC<IProps> = ({ item }) => {
+export const InfoContent: FC<IProps> = ({ item, value, increment, decriment, commit }) => {
     return <div className={s.InfoContent}>
         <div className={s.InfoContent__Name}>{item.Name}</div>
         <div className={s.InfoContent__Description}>{item.Description}</div>
@@ -17,8 +21,8 @@ export const InfoContent: FC<IProps> = ({ item }) => {
             <div className={s.InfoContent__Price}>${item.Price}</div>
         </div>
         <div className={s.InfoContent__ControlsGroup}>
-            <IncDecControl />
-            <button className={s.InfoContent__AddCard}>Add to cart</button>
+            <IncDecControl increment={increment} decrement={decriment} value={value} />
+            <button onClick={commit} className={s.InfoContent__AddCard}>Add to cart</button>
         </div>
     </div>
 }
